@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <script src="js/jquery-1.3.2.min.js"></script>
+  </head>
+  <body>
+    <h2 align="center">Регестрация</h2>
+      <form align="center">
+          <label>Логин:</label><br>
+          <input type="text"  id="login"><br>
+          <label>Пароль:</label><br>
+          <input type="password" id="pas"><br>
+          <label>Повторите пароль:</label><br>
+          <input type="password" id="rpas"><br>
+          <label>E-mail:</label><br>
+          <input type="email" name="mail"><br><br>
+          <input type="button" id="b" value="Зарегестрироваться" onclick="addColor();">
+      </form>
+  </body>
+</html>
+
+
+<script>
+function addColor(){
+  $("#login").css("border", "1px solid green");
+  $("#pas").css("border", "1px solid red");
+  $("#rpas").css("border", "1px solid blue");
+}
+</script>
