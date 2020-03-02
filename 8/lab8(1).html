@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="st.css">
+  <head>
+    <title>jQuery</title>
+    <script src="js/jquery-1.3.2.min.js"></script>
+  </head>
+  <body>
+    <form >
+      <h3>Вопросы и ответы</h3>
+      <br>
+      <input type="button" value="Свернуть все ответы" onclick="slideUpDiv();">
+      <input type="button" value="Развернуть все ответы" onclick="slideDownDiv();">
+      <br><br>
+      <div>
+        <div>
+          Чему равно 16^2?       
+          <br>
+          <input type="button" id="but1" value="Скрыть/Отобразить" onclick="hideShowDiv();">
+          <br>
+          <div id="1" class="sver">
+            256        
+          </div>
+        </div>
+          <br><br>
+          <div>
+            Сколько частей DMC?    
+          <br>
+          <input type="button" id="but1" value="Скрыть/Отобразить" onclick="hideShowDiv2();">
+          <br>
+          <div id="2" class="sver">
+            5 
+          </div>
+        </div>
+        <br><br>
+          <div>
+            Как работает программный код?
+          <br>
+          <input type="button" id="but1" value="Скрыть/Отобразить" onclick="hideShowDiv3();">
+          <br>
+          <div id="3" class="sver">
+            Код программы содержит инструкции, которые являются исполняемыми командами, выполняемыми машиной после преобразования кода компилятором.
+          </div>
+        </div>
+        <br><br>
+          <div>
+            Чем отличаются for и while?      
+          <br>
+          <input type="button" id="but1" value="Скрыть/Отобразить" onclick="hideShowDiv4();">
+          <br>
+          <div id="4" class="sver"> 
+            For использует счетчик и полезен при выполнении заранее определенного количества итераций.
+              While будет выполнять действие до тех пор, пока заданное условие не станет ложным. Это полезно при необходимости использования цикла с неопределенным числом итераций.
+          </div>
+        </div>
+        </div>
+    </form>        
+    
+  </body>
+</html>
+
+<script>
+  function hideShowDiv(){
+      $('#1').toggle('slow');
+}
+function hideShowDiv2(){
+      $('#2').toggle('slow');
+}
+function hideShowDiv3(){
+      $('#3').toggle('slow');
+}
+function hideShowDiv4(){
+      $('#4').toggle('slow');
+}
+
+function slideUpDiv(){
+    $('.sver').slideUp();
+}
+function slideDownDiv(){
+    $('.sver').slideDown();
+}
+</script>
